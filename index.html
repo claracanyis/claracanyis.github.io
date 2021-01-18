@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 
     <!-- Scripts -->
-    <script src="./JS/script.js" type="text/javascript"></script>
+    <script src="./JS/script.js" type="text/javascript" async></script>
 
 </head>
 <body>
@@ -30,93 +30,92 @@
                 <p class="banner__title"><em>Frontend Developer</em></p>
             </div>
             <p class="intro__description">I am a curious and creative engineer, always motivated to learn and apply my knowledge to help others. I am patient and I like to listen to other people when working in teams.</p>
-            <a class="intro__button" href="#about" aria-label="Navigate to About section">Explore</a>
-        </section>
-
-        <!-- NAVIGATION BAR -->
-        <section id="bar">
-            <p>Clara Canyís Cabuti</p>
-            <img src="./img/ccc-icon.png" alt="Clara Canyis Cabuti">    
-
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-        
+            <a id="intro__button" class="intro__button" href="#about" aria-label="Navigate to About section">Explore</a>
+        </section>        
     </header>
 
     <main>
-    <!-- ***** ABOUT ******** -->
-    <section id="about">
-        <h2>About</h2>
-        <article>
-            <h3>Science Scholarship - Joves i Ciència Catalunya-La Pedrera Program</h3>
-            <p><time datetime="2010">2010</time> - Summer project in Astronomy and Astrophysics</p>
-            <p><time datetime="2011">2011</time> - Internship in a Nanomaterials and Nanotechnology project [<abbr title="Universitat Autonoma de Barcelona" lang="ca">UAB</abbr>]</p>
-            <p><time datetime="2012">2012</time> - International Summer Science Camp. Engineering of the Future [<abbr title="Mouvement International pour le Loisir Scientifique Et Technique" lang="fr">MILSET</abbr>]</p>
-        </article>
-        <article>
-            <h3>Formula Student Project - <a href="https://etseib-motorsport.upc.edu/en/home/">ETSEIB Motorsport</a></h3>
-            <p><time datetime="2015">2015</time> - Management Chief: marketing, sponsorships, media [cat08e]</p>
-            <p><time datetime="2016">2016</time> - Low voltage wiring and dashboard [cat09e]</p>
-        </article>
-        <article>
-            <h3>Bachelor's degreee in Industrial Technologies Engineering [<abbr title="Universitat Politècnica de Catalunya" lang="ca">UPC</abbr>]</h3>
-            <p><time datetime="2016">2016</time> - Final project: web aplication for the Formula Student</p>
-        </article>
-        <article>
-            <h3>Master's degree in Industrial Engineering - Automatics</h3>
-            <p><time datetime="2017">2017</time> - Internship: electric and automation projects [<a href="https://www.cpqingenieros.com/?lang=en">CPQ Ingenieros</a>]</p>
-            <p><time datetime="2018">2018</time> - Final project: robot control to approach or evade moving objects</p>
-            <p><time datetime="2018">2018</time> - Erasmus program in Montanuniversität Leoben, Austria</p>
-        </article>
-        <article>
-            <h3>Aplication Engineer - <a href="https://www.br-automation.com/"></a>B&R Automation</h3>
-            <p><time>2018-Present</time> HMI Design and Programmig for several customers as well as marketing demonstrations.</p>
-            <p>PLC programming in Structured Text for basic automation control and motion control.</p>
-        </article>
-        <article>
-            <h3>Web development learning</h3>
-            <p><time datetime="2020-2">Febr 2020</time> - Responsive Web design [<a href="https://www.freecodecamp.org/">freeCodeCamp</a>]</p>
-            <p><time datetime="2020-6">June 2020</time> - Javascript Algorithms and Data structures [<a href="https://www.freecodecamp.org/">freeCodeCamp</a>]</p>
-            <p><time datetime="2021">2021</time> - Frontend Engineer Career Path [<a href="https://www.codecademy.com/">CodeCademy</a>]</p>
-        </article>
-    </section>
+        <!-- NAVIGATION BAR -->
+        <section id="bar" class="bar">
+            <p class="bar__name">Clara Canyís Cabuti</p>
+            <img class="bar__logo" src="./img/ccc-icon.png" alt="Clara Canyis Cabuti">    
 
-    <!-- ***** PROJECTS ***** -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <img src="" alt="">
-            <h3>Portfolio</h3>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h3>Bussiness Website</h3>
-        </article>
-    </section>
+            <nav class="bar__navigation">
+                <ul>
+                    <li><a class="navigation__link" href="#about">About</a></li>
+                    <li><a class="navigation__link" href="#projects">Projects</a></li>
+                    <li><a class="navigation__link" href="#blog">Blog</a></li>
+                    <li><a class="navigation__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <!-- ***** BLOG ********* -->
-    <section id="blog">
-        <h2>Blog</h2>
+        <!-- ***** ABOUT ******** -->
+        <section id="about">
+            <h2>About</h2>
+            <article>
+                <h3>Science Scholarship - Joves i Ciència Catalunya-La Pedrera Program</h3>
+                <p><time datetime="2010">2010</time> - Summer project in Astronomy and Astrophysics</p>
+                <p><time datetime="2011">2011</time> - Internship in a Nanomaterials and Nanotechnology project [<abbr title="Universitat Autonoma de Barcelona" lang="ca">UAB</abbr>]</p>
+                <p><time datetime="2012">2012</time> - International Summer Science Camp. Engineering of the Future [<abbr title="Mouvement International pour le Loisir Scientifique Et Technique" lang="fr">MILSET</abbr>]</p>
+            </article>
+            <article>
+                <h3>Formula Student Project - <a href="https://etseib-motorsport.upc.edu/en/home/">ETSEIB Motorsport</a></h3>
+                <p><time datetime="2015">2015</time> - Management Chief: marketing, sponsorships, media [cat08e]</p>
+                <p><time datetime="2016">2016</time> - Low voltage wiring and dashboard [cat09e]</p>
+            </article>
+            <article>
+                <h3>Bachelor's degreee in Industrial Technologies Engineering [<abbr title="Universitat Politècnica de Catalunya" lang="ca">UPC</abbr>]</h3>
+                <p><time datetime="2016">2016</time> - Final project: web aplication for the Formula Student</p>
+            </article>
+            <article>
+                <h3>Master's degree in Industrial Engineering - Automatics</h3>
+                <p><time datetime="2017">2017</time> - Internship: electric and automation projects [<a href="https://www.cpqingenieros.com/?lang=en">CPQ Ingenieros</a>]</p>
+                <p><time datetime="2018">2018</time> - Final project: robot control to approach or evade moving objects</p>
+                <p><time datetime="2018">2018</time> - Erasmus program in Montanuniversität Leoben, Austria</p>
+            </article>
+            <article>
+                <h3>Aplication Engineer - <a href="https://www.br-automation.com/"></a>B&R Automation</h3>
+                <p><time>2018-Present</time> HMI Design and Programmig for several customers as well as marketing demonstrations.</p>
+                <p>PLC programming in Structured Text for basic automation control and motion control.</p>
+            </article>
+            <article>
+                <h3>Web development learning</h3>
+                <p><time datetime="2020-2">Febr 2020</time> - Responsive Web design [<a href="https://www.freecodecamp.org/">freeCodeCamp</a>]</p>
+                <p><time datetime="2020-6">June 2020</time> - Javascript Algorithms and Data structures [<a href="https://www.freecodecamp.org/">freeCodeCamp</a>]</p>
+                <p><time datetime="2021">2021</time> - Frontend Engineer Career Path [<a href="https://www.codecademy.com/">CodeCademy</a>]</p>
+            </article>
+        </section>
 
-    </section>
+        <!-- ***** PROJECTS ***** -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <img src="" alt="">
+                <h3>Portfolio</h3>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h3>Bussiness Website</h3>
+            </article>
+        </section>
 
-    <!-- ***** CONTACT ****** -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <address>
-            <a href="https://github.com/claracanyis">GitHub</a>
-            <a href="https://www.linkedin.com/in/clara-canyis-cabuti/">Linkedin</a>
-            <a href="https://codepen.io/claracanyis">CodePen</a>
-            <a href="mailto:clara.canyis.cabuti@gmail.com">clara.canyis.cabuti@gmail.com</a>
-        </address>
-    </section>
+        <!-- ***** BLOG ********* -->
+        <section id="blog">
+            <h2>Blog</h2>
+
+        </section>
+
+        <!-- ***** CONTACT ****** -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <address>
+                <a href="https://github.com/claracanyis">GitHub</a>
+                <a href="https://www.linkedin.com/in/clara-canyis-cabuti/">Linkedin</a>
+                <a href="https://codepen.io/claracanyis">CodePen</a>
+                <a href="mailto:clara.canyis.cabuti@gmail.com">clara.canyis.cabuti@gmail.com</a>
+            </address>
+        </section>
 
     </main>
 

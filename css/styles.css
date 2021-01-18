@@ -45,7 +45,7 @@ em {
 }
 
 /* ======================================== */
-/* ========== 2. Header ================== */
+/* ========== 2. Header =================== */
 header {
     font-size: 1.4rem;
     background-color: black;
@@ -91,6 +91,11 @@ header {
     padding: 10px 20px;
 }
 
+.intro__button:hover {
+    background-color: #E01F39;
+    color: #FFFFFF;
+}
+
 @media only screen and (max-height: 550px) and (min-width: 635px) {
     .intro {
         padding: 2%;
@@ -121,3 +126,56 @@ header {
     }
 }
 
+/* ======================================== */
+/* ========== 3. Bar ====================== */
+.bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.bar__name {
+    font-size: 2rem;
+    font-family: 'Lobster', 'Times New Roman', Times, serif;
+    padding: 15px
+}
+
+.bar__logo {
+    display: none;
+}
+
+.bar__navigation ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.navigation__link {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.navigation__link:hover {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.bar--sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.bar--sticky + section {
+    padding-top: 80px;
+}
