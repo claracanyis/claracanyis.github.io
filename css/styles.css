@@ -1,0 +1,123 @@
+/*
+1. General
+2. Header
+3. Bar
+4. About
+5. Projectes
+6. Contact
+*/
+
+/* ======================================== */
+/* ========== 1. General ================== */
+* {
+    font-family: 'Roboto', Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Lobster', 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    letter-spacing: 3px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size:  2.5rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+em {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ======================================== */
+/* ========== 2. Header ================== */
+header {
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+}
+
+.intro {
+    height: 100vh;
+    margin: 0;
+    padding: 6%;
+    text-align: center;
+}
+
+.intro__banner {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    top: -40px;
+    text-align: left;
+}
+
+.banner__title {
+    font-size: 1.6rem;
+}
+
+.intro__avatar {
+    height: 35vh;
+    width: auto;
+}
+
+.intro__description {
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.intro__button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #FFD500;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+@media only screen and (max-height: 550px) and (min-width: 635px) {
+    .intro {
+        padding: 2%;
+        min-height: 375px;
+    }
+    .intro__banner {
+        top: -20px;
+    }
+    .banner__name {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 634px) {
+    .intro {
+        min-height: 400px;
+        padding-top: 3%;
+    }
+    .intro__banner {
+        position: static;
+        text-align: center;
+    }
+    .banner__name {
+        font-size: 2.2rem;
+    }
+    .banner__title {
+        font-size: 1.4rem;
+    }
+}
+

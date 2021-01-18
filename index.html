@@ -9,20 +9,29 @@
     <meta name="keyword" content="portfolio, javascript, developer, html, css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 
     <!-- Scripts -->
     <script src="./JS/script.js" type="text/javascript"></script>
+
 </head>
 <body>
     <!-- ***** PRESENTATION ******* -->
     <header>
-        <img src="./img/ccc-avatar.svg" alt="Clara's avatar">
-        <h1>Clara Canyís Cabuti</h1>
-        <p><em>Frontend Developer</em></p>
-        <p>I am a curious and creative engineer, always motivated to learn and apply my knowledge to help others. I am patient and I like to listen to other people when working in teams.</p>
-        <a href="#about" aria-label="Navigate to About section">Explore</a>
+        <section class="intro" id="presentation">
+            <img class="intro__avatar" src="./img/ccc-avatar.svg" alt="Clara's avatar">
+            <div class="intro__banner">
+                <h1 class="banner__name">Clara Canyís Cabuti</h1>
+                <p class="banner__title"><em>Frontend Developer</em></p>
+            </div>
+            <p class="intro__description">I am a curious and creative engineer, always motivated to learn and apply my knowledge to help others. I am patient and I like to listen to other people when working in teams.</p>
+            <a class="intro__button" href="#about" aria-label="Navigate to About section">Explore</a>
+        </section>
 
         <!-- NAVIGATION BAR -->
         <section id="bar">
