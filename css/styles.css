@@ -177,5 +177,52 @@ header {
   }
 
 .bar--sticky + section {
-    padding-top: 80px;
+    padding-top: 130px;
+}
+
+@media only screen and (max-width: 750px) {
+    .bar__name {
+        display: none;
+    }
+    .bar__logo {
+        display: inline-block;
+        height: 70px;
+        width: auto;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .bar__navigation ul{
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        margin-right: 15px;
+    }
+    .bar:hover .bar__navigation ul {
+        display: flex;
+    }
+    .navigation__link {
+        margin: 10px;
+        font-size: 1.8rem;
+    }
+}
+
+/* ======================================== */
+/* ========== 4. About ==================== */
+.about {
+    padding: 50px 6%;
+}
+
+.about__exp {
+    background-color: #FFD500;
+    display: block;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
 }
