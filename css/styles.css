@@ -3,8 +3,9 @@
 2. Header
 3. Bar
 4. About
-5. Projectes
-6. Contact
+5. Projects
+6. Blog
+7. Contact
 */
 
 /* ======================================== */
@@ -252,12 +253,16 @@ header {
     padding: 50px 6%;
 }
 
+.about__title {
+    text-align: center;
+}
+
 .about__ref {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 120px 0 30px 0;
+    margin: 120px 0 40px 0;
     font-family: 'Lobster', 'Times New Roman', Times, serif;
 }
 
@@ -367,7 +372,7 @@ header {
 }
 
 .about__cv {
-    margin-top: 220px;
+    margin-top: 120px;
     margin-bottom: -100px;
     width: 100%;
     text-align: right;
@@ -394,6 +399,35 @@ header {
     color: #FFFFFF;
 }
 
+@media only screen and (max-width: 750px) {
+    .exp__content {
+        padding: 10px;
+    }
+
+    .exp__radio:checked + div .exp__circle {
+        background: #FFD500;
+        width: 20px;
+        height: 20px;
+        top: -13px;
+        left: -15px;
+        border-width: 0px 5px;
+    }
+
+    .exp__radio:checked ~ .exp__content  {
+        position: absolute;
+        left: 10vw;
+    }
+
+    .exp__radio:checked + div .exp__date {
+        position: relative;
+        right: -10px;
+    }
+
+    .cv__text {
+        display: block;
+    }
+}
+
 /* ======================================== */
 /* ========== 5. Projects ================= */
 .projects {
@@ -407,4 +441,233 @@ header {
     100% calc(100% - 20vw),
     0 100%
   );
+}
+
+.projects__display {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 0 10vw;
+}
+
+.project__miniature {
+    /*width: 20%;*/
+    width: 400px;
+    max-width: 450px;
+    min-width: 300px;
+    flex: 1 1 350px;
+    height: 250px;
+    margin: 20px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+    transition: width 0.5s;
+}
+
+.project__miniature::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    background: rgba(255, 213, 0, 0.9);
+    z-index: 2;
+    transition: opacity 0.5s;
+    opacity: 0;  
+}
+
+.project__miniature:hover::before {
+    opacity: 1;
+}
+
+.project__miniature img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.miniature__info {
+    position: relative;
+    z-index: 3;
+    color: #000000;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: center;
+    visibility: hidden;
+}
+
+.project__miniature:hover .miniature__info {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-65%)
+}
+
+.miniature__info h3 {
+    font-size: 1.6rem;
+    margin: 10px;
+}
+
+.miniature__info p {
+    font-size: 1.2rem;
+    display: block;
+}
+
+.miniature__info a {
+    padding: 15px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+
+.miniature__info a:hover {
+    background-color: #1e1e1e;
+}
+
+/* ======================================== */
+/* ========== 6. Blog ================== */
+.blog {
+    margin-top: -100px;
+    padding: 90px 6% 150px;
+    min-height: 100vh;
+}
+
+.blog h2 {
+    text-align: right;
+}
+
+.blog p {
+    display: block;
+    width: 100%;
+    padding: 200px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ======================================== */
+/* ========== 7. Contact ================== */
+.contact {
+    padding: 150px 6% 50px;
+    color: #FFFFFF;
+    min-height: 100vh;
+    background-color: #000000;
+    clip-path: polygon(
+    50% 10vw, 
+    100% 0, 
+    100% 100%, 
+    0 100%, 
+    0 0)
+}
+
+.contact__title {
+    text-align: center;
+    margin: 100px 0 60px;
+}
+
+.contact__form {
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.form__input {
+    margin: 20px 0;
+}
+
+.form__input input, .form__input textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.2rem;
+}
+
+.form__input label::after {
+    content: " *";
+    color: #E01F39;
+}
+
+::placeholder {
+    color: #707070;
+    opacity: 1;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+
+.form__input input:focus, .form__input textarea:focus {
+    outline: none;
+    border: 3px solid #FFD500;
+}
+
+.form__input input:focus:invalid, 
+.form__input textarea:focus:invalid,
+.form__input input[type=email]:invalid {
+    border: 3px solid #E01F39;
+}
+
+.form__input label {
+    font-size: 1.2rem;
+}
+
+.form__button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.4rem;
+    background-color: #FFD500;
+    color: #000000;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    color: #FFFFFF;
+    background-color: #E01F39;
+}
+
+.contact__info {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__info a {
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact__info a:hover {
+    color: #ffffff;
+    transform: translateY(-10px);
+}
+
+/* ======================================== */
+/* ========== 8. Footer =================== */
+footer {
+    background-color: #000000;
+    color: #dfdfdf;
+    text-align: center;
+    padding: 50px 0 20px;
+    position: relative;
+    top: -1px;   
 }
