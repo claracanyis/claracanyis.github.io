@@ -678,11 +678,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 .contact__info a {
     padding: 25px;
     color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease-out;
 }
 
 .contact__info a:hover {
     color: #ffffff;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
 @media only screen and (max-width: 400px) {
