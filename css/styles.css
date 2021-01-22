@@ -639,13 +639,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .form__input input:focus, .form__input textarea:focus {
     outline: none;
-    border: 3px solid #FFD500;
+    box-shadow: 0px 0px 4px 4px rgba(255,213,0,0.66);
 }
 
 .form__input input:focus:invalid, 
 .form__input textarea:focus:invalid,
 .form__input input[type=email]:invalid {
-    border: 3px solid #E01F39;
+    box-shadow: 0px 0px 4px 4px rgba(224,31,57,0.66);
 }
 
 .form__input label {
