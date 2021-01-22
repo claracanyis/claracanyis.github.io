@@ -428,6 +428,24 @@ header {
     }
 }
 
+@media only screen and (max-width: 445px) {
+    .timeline {
+        height: 500px;
+    }
+    .exp__radio:checked ~ .exp__content  {
+        border-color: #000000;
+        width: 250px;
+        height: auto;
+        max-height: 700px;
+        padding: 10px;
+    }
+
+    .about__cv {
+        margin-top: 120px;
+        margin-bottom: 0px;
+    }
+}
+
 /* ======================================== */
 /* ========== 5. Projects ================= */
 .projects {
@@ -659,6 +677,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 .contact__info a:hover {
     color: #ffffff;
     transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 400px) {
+    .contact__info a {
+        padding: 15px;
+        color: rgba(255, 255, 255, 0.8);
+    }
 }
 
 /* ======================================== */
