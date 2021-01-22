@@ -11,4 +11,4 @@ Projects presented in the portfolio:
 * [Business Website](https://claracanyis.github.io/ThreadIt/)
 
 ## Version
-Last updated: 21.01.2021
+Last updated: 22.01.2021
