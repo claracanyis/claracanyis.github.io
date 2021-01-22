@@ -683,8 +683,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .form__input input:focus:invalid, 
-.form__input textarea:focus:invalid,
-.form__input input[type=email]:invalid {
+.form__input textarea:focus:invalid {
     box-shadow: 0px 0px 4px 4px rgba(224,31,57,0.66);
 }
 
