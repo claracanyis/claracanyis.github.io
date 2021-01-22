@@ -1,3 +1,4 @@
+// --- FIX BAR ON TOP WHEN/AFTER SCROLLING
 // Add a sticky class to the navigation bar
 let stickNavBar = function () {
     if (window.pageYOffset >= currBarPosition) {
@@ -22,3 +23,17 @@ headerButton.onclick = function(e) {
         behavior: 'smooth' 
     });
 }; 
+
+// --- SCROLL ANIMATION FOR NAVBAR LINKS
+// Scroll function
+let scrollAnimation = function(e) {
+    e.preventDefault();
+    let destination = document.querySelector(this.hash);
+    destination.scrollIntoView({behavior: 'smooth'});
+}
+
+// Add animation to the links
+let navigationLinks = document.querySelectorAll('.navigation__link');
+navigationLinks.forEach(elem => {
+    elem.onclick = scrollAnimation;
+})
