@@ -604,6 +604,17 @@ header {
     background-color: #1e1e1e;
 }
 
+@media only screen and (min-width: 1600px) {
+    .projects {
+        clip-path: polygon(
+        0 0,
+        100% 10vw,
+        100% calc(100% - 10vw),
+        0 100%
+      );
+    }
+}
+
 /* ======================================== */
 /* ========== 6. Blog ================== */
 .blog {
@@ -641,7 +652,7 @@ header {
 
 .contact__title {
     text-align: center;
-    margin: 100px 0 60px;
+    margin: calc(100px + 4vw) 0 60px;
 }
 
 .contact__form {
