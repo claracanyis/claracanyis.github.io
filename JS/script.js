@@ -37,3 +37,34 @@ let navigationLinks = document.querySelectorAll('.navigation__link');
 navigationLinks.forEach(elem => {
     elem.onclick = scrollAnimation;
 })
+
+// --- DIALOGS MANAGEMENT
+
+// Dialogs:
+const portfolioDialog = document.getElementById("dialog_portfolio");
+const businessDialog = document.getElementById("dialog_business");
+// Register dialogs for polyfill:
+dialogPolyfill.registerDialog(portfolioDialog);
+dialogPolyfill.registerDialog(businessDialog);
+
+// Manage portfolio dialog
+const openPortfolioDialog = document.getElementById("open_portfolio");
+const closePortfolioButton = document.getElementById("close_portfolio");
+
+openPortfolioDialog.onclick = () => {
+    portfolioDialog.showModal();
+};
+closePortfolioButton.onclick = () => {
+    portfolioDialog.close();
+}
+
+// Manage business dialog
+const openBusinessDialog = document.getElementById("open_business");
+const closeBusinessButton = document.getElementById("close_business")
+
+openBusinessDialog.onclick = () => {
+    businessDialog.showModal();
+};
+closeBusinessButton.onclick = () => {
+    businessDialog.close();
+}

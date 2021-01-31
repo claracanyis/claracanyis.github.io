@@ -15,9 +15,11 @@
     <script src="https://kit.fontawesome.com/06e7c701d3.js" crossorigin="anonymous"></script>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/dialog-polyfill.css" type="text/css">
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 
     <!-- Scripts -->
+    <script src="./JS/dialog-polyfill.js" type="text/javascript" async></script>
     <script src="./JS/script.js" type="text/javascript" async></script>
 
     <!-- Linkedin metadata -->
@@ -174,7 +176,7 @@
                         <h3>Portfolio Website</h3>
                         <p>HTML5  |  CSS3  |  JS  |  HTML forms</p>
                         <p>- Responsive - Acessible -</p>
-                        <a href="https://claracanyis.github.io/#intro">See more</a>
+                        <a id="open_portfolio">See more</a>
                     </div>
                 </article>
                 <article class="project__miniature">
@@ -183,7 +185,7 @@
                         <h3>Bussiness Demo</h3>
                         <p>HTML5  |  CSS3  | JS</p>
                         <p>- Flexbox -</p>
-                        <a href="https://claracanyis.github.io/ThreadIt/" target="_blank">See more</a>
+                        <a id="open_business">See more</a>
                     </div>
                 </article>
                 <article class="project__miniature">
@@ -224,6 +226,30 @@
                 </article>
             </div>
         </section>
+
+        <dialog id="dialog_portfolio" class="dialog">
+            <img src="./img/portfolio-img.PNG" alt="portfolio miniature" class="dialog__image">
+            <button id="close_portfolio" class="dialog__close"><i class="fas fa-2x fa-times"></i></button>
+            <h3>Portfolio Website</h3>
+            <p>This portfolio has been designed and coded by me.</p>
+            <p>It uses HTML5 and CSS3 with flexbox for the static part and JavaScript for the scrolling animation.</p>
+            <p>It is programmed taking care of html semantics, acessibility and responsibility.</p>
+            <p><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Flexbox</span></p>
+            <a class="dialog__button" href="https://claracanyis.github.io/#intro" target="_blank">See Website</a>
+            <a class="dialog__button" href="https://github.com/claracanyis/claracanyis.github.io" target="_blank">See Code</a>
+        </dialog>
+
+        <dialog id="dialog_business" class="dialog">
+            <img src="./img/business-img.PNG" alt="portfolio miniature" class="dialog__image">
+            <button id="close_business" class="dialog__close"><i class="fas fa-2x fa-times"></i></button>
+            <h3>Business Website</h3>
+            <p>This business page has been done as an exercise project from a Codecademy course. Both design and code are 100% done by me.</p>
+            <p>It uses HTML5 and CSS3 with flexbox for the static part and JavaScript for the banner's image change.</p>
+            <p>It is programmed taking care of html semantics, acessibility and responsibility.</p>
+            <p><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Flexbox</span></p>
+            <a class="dialog__button" href="https://claracanyis.github.io/ThreadIt/" target="_blank">See Website</a>
+            <a class="dialog__button" href="https://github.com/claracanyis/ThreadIt" target="_blank">See Code</a>
+        </dialog>
 
         <!-- ***** BLOG ********* -->
         <section id="blog" class="blog">

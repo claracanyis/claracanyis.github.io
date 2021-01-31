@@ -107,6 +107,7 @@ header {
 .intro__avatar {
     height: 35vh;
     width: auto;
+    border-radius: 50%;
 }
 
 .intro__description {
@@ -610,6 +611,7 @@ header {
     text-decoration: none;
     position: relative;
     top: 30px;
+    cursor: pointer;
 }
 
 .miniature__info a:hover {
@@ -624,6 +626,87 @@ header {
         100% calc(100% - 10vw),
         0 100%
       );
+    }
+}
+
+/* Project dialogs */
+.dialog {
+    width: 80%;
+    max-width: 800px;
+    min-width: 320px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: none;
+    background-color: #E01F39;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+}
+
+.dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.dialog__close {
+    border-style: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline;
+    cursor: pointer;
+}
+
+.dialog__close:focus, .dialog__close:hover {
+    outline: none;
+    color: #FFFFFF;
+}
+
+.dialog__image {
+    float: left;
+    width: 350px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+
+.dialog p {
+    padding: 10px 0;
+}
+
+.dialog p span {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    float: right;
+}
+
+.dialog__button {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FFD500;
+    color: #000000;
+    padding: 8px 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+}
+
+.dialog__button:hover {
+    background-color: #1e1e1e;
+    color: #FFFFFF;   
+}
+
+@media only screen and (max-width: 450px) {
+    .dialog__image {
+        width: 80%;
     }
 }
 
