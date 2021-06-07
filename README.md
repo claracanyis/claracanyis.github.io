@@ -9,6 +9,7 @@ Find it in: [https://claracanyis.github.io/](https://claracanyis.github.io/)
 Projects presented in the portfolio:
 * [Portfolio](https://claracanyis.github.io/)
 * [Business Website](https://claracanyis.github.io/ThreadIt/)
+* [Jamming app](http://jamming-together.surge.sh/)
 
 ## Version
 .¡Last updated: 07.06.2021
