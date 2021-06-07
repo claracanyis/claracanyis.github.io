@@ -12,4 +12,4 @@ Projects presented in the portfolio:
 * [Jamming app](http://jamming-together.surge.sh/)
 
 ## Version
-.¡Last updated: 07.06.2021
+.Last updated: 07.06.2021
