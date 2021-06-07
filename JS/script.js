@@ -43,9 +43,12 @@ navigationLinks.forEach(elem => {
 // Dialogs:
 const portfolioDialog = document.getElementById("dialog_portfolio");
 const businessDialog = document.getElementById("dialog_business");
+const jammingDialog = document.getElementById("dialog_jamming");
+
 // Register dialogs for polyfill:
 dialogPolyfill.registerDialog(portfolioDialog);
 dialogPolyfill.registerDialog(businessDialog);
+dialogPolyfill.registerDialog(jammingDialog);
 
 // Manage portfolio dialog
 const openPortfolioDialog = document.getElementById("open_portfolio");
@@ -67,4 +70,15 @@ openBusinessDialog.onclick = () => {
 };
 closeBusinessButton.onclick = () => {
     businessDialog.close();
+}
+
+// Manage jamming app dialog
+const openJammingDialog = document.getElementById("open_jamming");
+const closeJammingButton = document.getElementById("close_jamming")
+
+openJammingDialog.onclick = () => {
+    jammingDialog.showModal();
+};
+closeJammingButton.onclick = () => {
+    jammingDialog.close();
 }
